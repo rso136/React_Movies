@@ -1,4 +1,3 @@
-// Include Server Dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
@@ -9,7 +8,6 @@ var Review = require('./server/model.js');
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// Run Morgan for Logging
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -18,7 +16,6 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 app.use(express.static('./public'));
 
-// MongoDB Configuration configuration
 mongoose.connect('mongodb://heroku_0nr1bsj4:4eegk8mdbgaajo6jg67bsq4bla@ds137197.mlab.com:37197/heroku_0nr1bsj4');
 var db = mongoose.connection;
 
@@ -29,10 +26,6 @@ db.on('error', function (err) {
 db.once('open', function () {
 	console.log('Mongoose connection successful.');
 });
-
-//app.get('*', function (request, response){
-  //response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-//})
 
 app.get('/', function(req, res){
 	res.sendFile('./public/index.html');

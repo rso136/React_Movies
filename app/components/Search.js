@@ -1,13 +1,9 @@
-
-// Include React and React-Router dependencies
 var React = require('react');
 var Router = require('react-router');
 
-// Include the Query and Results componens
 var Query = require('./Search/Query');
 var Results = require('./Search/Results');
 
-// Include the Helper (for the query)
 var helpers = require('../utils/helpers');
 
 var Search = React.createClass({
