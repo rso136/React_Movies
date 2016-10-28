@@ -48,19 +48,13 @@
 
 	var _reactRouter = __webpack_require__(1);
 
-	// Include the Main React Dependencies
 	var React = __webpack_require__(3);
 	var ReactDOM = __webpack_require__(97);
 
-	// Grab the proeprty associated with the Router
 	var Router = __webpack_require__(1).Router;
 
-	// Grabs the Routes
 	var routes = __webpack_require__(235);
 
-	// Renders the contents according to the route page. 
-	// Displays the contents in the div app of index.html
-	// Note how ReactDOM takes in two parameters (the contents and the location)
 	ReactDOM.render(React.createElement(
 		Router,
 		{ history: _reactRouter.hashHistory },
@@ -27397,22 +27391,17 @@
 
 	'use strict';
 
-	// Inclue the React library
 	var React = __webpack_require__(3);
 
-	// Include the Router
 	var Router = __webpack_require__(1);
 	var Route = Router.Route;
 
-	//  Include the IndexRoute (catch-all route)
 	var IndexRoute = Router.IndexRoute;
 
-	// Reference the high-level components
 	var Main = __webpack_require__(236);
 	var Search = __webpack_require__(237);
 	var Reviews = __webpack_require__(260);
 
-	// Export the Routes
 	module.exports = React.createElement(
 			Route,
 			{ path: '/', component: Main },
@@ -27475,15 +27464,7 @@
 								)
 							)
 						),
-						React.createElement(
-							'div',
-							{ className: 'navbar-header' },
-							React.createElement(
-								'a',
-								{ className: 'navbar-brand', href: 'https://www.richardsoh.com', target: '_blank' },
-								React.createElement('img', { alt: 'Brand', id: 'icon', src: 'assets/images/iconb.png', height: '20', width: '30' })
-							)
-						)
+						React.createElement('div', { className: 'navbar-header' })
 					)
 				),
 				React.createElement(
@@ -27536,15 +27517,12 @@
 
 	'use strict';
 
-	// Include React and React-Router dependencies
 	var React = __webpack_require__(3);
 	var Router = __webpack_require__(1);
 
-	// Include the Query and Results componens
 	var Query = __webpack_require__(238);
 	var Results = __webpack_require__(239);
 
-	// Include the Helper (for the query)
 	var helpers = __webpack_require__(240);
 
 	var Search = React.createClass({
@@ -29193,7 +29171,7 @@
 							React.createElement(
 								'b',
 								null,
-								'TOP 10 REVIEWS'
+								'TOP REVIEWS'
 							)
 						),
 						React.createElement('br', null)
