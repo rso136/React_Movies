@@ -30,6 +30,9 @@ db.once('open', function () {
 	console.log('Mongoose connection successful.');
 });
 
+//app.get('*', function (request, response){
+  //response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+//})
 
 app.get('/', function(req, res){
 	res.sendFile('./public/index.html');

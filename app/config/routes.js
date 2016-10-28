@@ -14,11 +14,14 @@ var Search = require('../components/Search');
 var Reviews = require('../components/Reviews');
 
 
+
+
 // Export the Routes
 module.exports = (
 
+
 	/*High level component is the Main component*/
-	<Route path='/' component={Main}>
+		<Route path='/' component={Main}>
 
 		{/* If user selects Search or Saved show the appropriate component*/}
 			<Route path='Search' component={Search} />
@@ -27,7 +30,8 @@ module.exports = (
 		{/*If user selects any other path... we get the Home Route*/}
 		<IndexRoute component={Search} />	
 
-	</Route>
+		</Route>
+
 
 
 );

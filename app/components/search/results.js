@@ -21,7 +21,7 @@ var Results = React.createClass({
 
 	},
 
-	handleClick: function() {
+	handleSubmit: function() {
 		console.log("CLICK");
 		console.log(this.state.rating);
 		console.log(this.state.comment);
@@ -44,7 +44,7 @@ var Results = React.createClass({
 			return (
 
 				<div className="row">
-					<div className="col-md-6 col-md-offset-5" id="noResult">
+					<div className="col-md-6 col-md-offset-3" id="noResult">
 						<h4>No Current Results</h4>
 					</div>
 				</div>
@@ -85,7 +85,7 @@ var Results = React.createClass({
 						</div>	
 						<textarea className="form-control" rows="4" name="review" id="comment" onChange={this.handleChange} placeholder="Submit your own movie review"></textarea>
 					</div>
-							<button type="button" className="btn btn-customB" onClick={this.handleClick}>SUBMIT</button>
+							<button type="submit" className="btn btn-customB" onClick={this.handleSubmit}>SUBMIT</button>
 						</form>
 					</div>
 				</div>
