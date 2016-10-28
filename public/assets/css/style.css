@@ -18,12 +18,25 @@ body {
 	background-color: #540511;
 }
 
+.btn-custom:hover {
+	color: white;
+}
+
+.btn-custom:focus {
+	color: white;
+	outline: none;
+}
+
 .btn-customB {
 	background-color: #282e5b;
 }
 
 #noResult {
-	margin-bottom: 300px;
+	margin-bottom: 250px;
+}
+
+#error {
+	margin-bottom: 250px;
 }
 
 #resultBox {
@@ -62,6 +75,14 @@ body {
 
 #reviewHeading {
 	margin-left: 20px;
+}
+
+#noReviews {
+	margin-bottom: 332px;
+}
+
+#listContainer {
+	margin-bottom: 150px;
 }
 
 ol {

@@ -39,16 +39,26 @@ var Results = React.createClass({
 
 	render: function() {
 
-		if (!this.props.results.hasOwnProperty('Title')) {
+		if (!this.props.results.hasOwnProperty('Title') && !this.props.results.hasOwnProperty('Error')) {
 
 			return (
 
 				<div className="row">
 					<div className="col-md-6 col-md-offset-3" id="noResult">
-						<h4>No Current Results</h4>
+						<h4>Search for a movie</h4>
 					</div>
 				</div>
 			)
+		}
+		if (this.props.results.hasOwnProperty('Error')) {
+				
+			return (
+				<div className="row">
+					<div className="col-md-6 col-md-offset-3" id="error">
+						<h4>No movie found by that title</h4>
+					</div>
+				</div>
+			)	
 		}
 		else {
 

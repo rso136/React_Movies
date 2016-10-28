@@ -27710,7 +27710,7 @@
 
 		render: function render() {
 
-			if (!this.props.results.hasOwnProperty('Title')) {
+			if (!this.props.results.hasOwnProperty('Title') && !this.props.results.hasOwnProperty('Error')) {
 
 				return React.createElement(
 					'div',
@@ -27721,7 +27721,23 @@
 						React.createElement(
 							'h4',
 							null,
-							'No Current Results'
+							'Search for a movie'
+						)
+					)
+				);
+			}
+			if (this.props.results.hasOwnProperty('Error')) {
+
+				return React.createElement(
+					'div',
+					{ className: 'row' },
+					React.createElement(
+						'div',
+						{ className: 'col-md-6 col-md-offset-3', id: 'error' },
+						React.createElement(
+							'h4',
+							null,
+							'No movie found by that title'
 						)
 					)
 				);
@@ -29106,7 +29122,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-3', id: 'noReviews' },
+						{ className: 'col-md-6 col-md-offset-5', id: 'noReviews' },
 						React.createElement(
 							'h4',
 							null,
@@ -29140,7 +29156,7 @@
 								React.createElement(
 									'h5',
 									null,
-									'User review: ',
+									'User Review: ',
 									React.createElement(
 										'i',
 										null,
@@ -29152,6 +29168,7 @@
 								React.createElement(
 									'h5',
 									null,
+									'Rating: ',
 									review.rating,
 									' stars'
 								)
@@ -29183,9 +29200,13 @@
 					)
 				),
 				React.createElement(
-					'ol',
-					null,
-					reviews
+					'div',
+					{ id: 'listContainer' },
+					React.createElement(
+						'ol',
+						null,
+						reviews
+					)
 				)
 			);
 		}
