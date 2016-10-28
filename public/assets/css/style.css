@@ -1,0 +1,105 @@
+body {
+	background-color: #4f4f4f;
+	color: white;
+	font-family: 'Questrial', sans-serif;
+}
+
+#navBar {
+	margin-bottom: 0;
+}
+
+#menuItem1, #menuItem2 {
+	margin-right: 35px;
+}
+
+
+.btn-custom {
+	color: white;
+	background-color: #540511;
+}
+
+.btn-customB {
+	background-color: #282e5b;
+}
+
+#noResult {
+	margin-bottom: 300px;
+}
+
+#resultBox {
+	background-color: #292a2b;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	border-style: groove;
+	border-radius: 10px;
+}
+
+#movieForm {
+	margin-bottom: 20px;
+}
+
+.poster {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.reviewPosters {
+	float: left;
+	margin: 10px;
+}
+
+.reviewBoxes {
+	background-color: #292a2b;
+	border-style: groove;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#reviewHeading {
+	margin-left: 20px;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+.jumbotron {
+	background-color: #292a2b;
+	color: white;
+	text-align: center;
+}
+
+.night-hotel {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 20px;
+  border: none;
+  font: normal 60px/1 "Monoton", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 10px rgb(255,255,255) , 0 0 20px rgb(255,255,255) , 0 0 30px rgb(255,255,255) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.night-hotel:hover {
+  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+}
+
+.footer {
+	height: 85px;
+	background-color: #292a2b;
+	bottom: 0;	
+}
+
+#reactIcon {
+	float: left;
+	margin-right: 7px;
+	margin-top: 4px;
+}
