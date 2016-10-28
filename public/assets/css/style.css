@@ -34,6 +34,10 @@ body {
 	border-radius: 10px;
 }
 
+.rateSelect {
+	padding-left: 0;
+}
+
 #movieForm {
 	margin-bottom: 20px;
 }

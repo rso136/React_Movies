@@ -21,7 +21,7 @@ var Results = React.createClass({
 
 	},
 
-	handleClick:function() {
+	handleClick: function() {
 		console.log("CLICK");
 		console.log(this.state.rating);
 		console.log(this.state.comment);
@@ -44,7 +44,7 @@ var Results = React.createClass({
 			return (
 
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3" id="noResult">
+					<div className="col-md-6 col-md-offset-5" id="noResult">
 						<h4>No Current Results</h4>
 					</div>
 				</div>
@@ -73,7 +73,7 @@ var Results = React.createClass({
 						<h5><b>Actors:</b> {movieActors}</h5>
 						<h5><b>Rated:</b> {movieRated}</h5>
 						<h5><b>Release Year:</b> {movieYear}</h5>
-						<div className="col-xs-3">
+						<div className="rateSelect col-xs-3">
 							<label>Your Rating:</label>
 							<select className="form-control" id="rating" onChange={this.handleChange}>
 								<option value="1">1 star</option>

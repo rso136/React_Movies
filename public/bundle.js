@@ -27473,7 +27473,15 @@
 								)
 							)
 						),
-						React.createElement('div', { className: 'navbar-header' })
+						React.createElement(
+							'div',
+							{ className: 'navbar-header' },
+							React.createElement(
+								'a',
+								{ className: 'navbar-brand', href: 'https://www.richardsoh.com', target: '_blank' },
+								React.createElement('img', { alt: 'Brand', id: 'icon', src: 'assets/images/iconb.png', height: '20', width: '30' })
+							)
+						)
 					)
 				),
 				React.createElement(
@@ -27630,7 +27638,7 @@
 					{ className: "row" },
 					React.createElement(
 						"div",
-						{ className: "col-md-3 col-md-offset-3" },
+						{ className: "col-md-6 col-md-offset-3" },
 						React.createElement(
 							"form",
 							null,
@@ -27707,7 +27715,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-3', id: 'noResult' },
+						{ className: 'col-md-6 col-md-offset-5', id: 'noResult' },
 						React.createElement(
 							'h4',
 							null,
@@ -27799,7 +27807,7 @@
 								),
 								React.createElement(
 									'div',
-									{ className: 'col-xs-3' },
+									{ className: 'rateSelect col-xs-3' },
 									React.createElement(
 										'label',
 										null,
@@ -27839,7 +27847,7 @@
 							),
 							React.createElement(
 								'button',
-								{ type: 'button', className: 'btn btn-customB', onClick: this.handleClick },
+								{ type: 'button', className: 'btn btn-customB', onClick: this.handleClick.bind(this) },
 								'SUBMIT'
 							)
 						)

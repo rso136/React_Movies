@@ -16,6 +16,10 @@ var Main = React.createClass({
                     		<h4><a href="#/reviews" className="navbar-link">Reviews</a></h4></li>
   						</ul>
     					<div className="navbar-header">
+    						<a className="navbar-brand" href="https://www.richardsoh.com" target="_blank">
+                    			<img alt="Brand" id="icon" src="assets/images/iconb.png" height="20" width="30"></img>
+                			</a>
+
      					
     					</div>
   					</div>
@@ -36,6 +40,7 @@ var Main = React.createClass({
 							<br></br>
 							<img src="/assets/images/react.png" height="25" width="25" id="reactIcon"></img>
 							<h5>Created with ReactJS</h5>
+
 						</div>
 					</div>
 				</div>
