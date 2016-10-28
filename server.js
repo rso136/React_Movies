@@ -19,7 +19,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(express.static('./public'));
 
 // MongoDB Configuration configuration
-mongoose.connect('mongodb://localhost/movies');
+mongoose.connect('mongodb://heroku_0nr1bsj4:4eegk8mdbgaajo6jg67bsq4bla@ds137197.mlab.com:37197/heroku_0nr1bsj4');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
