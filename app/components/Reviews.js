@@ -60,7 +60,7 @@ var Reviews = React.createClass({
 			<div className="main-container">
 				<div className="row">
 					<div className="col-md-8 col-md-offset-2">
-						<h3 id="reviewHeading"><b>TOP 10 REVIEWS</b></h3>
+						<h3 id="reviewHeading"><b>TOP REVIEWS</b></h3>
 						<br></br>
 					</div>
 				</div>
