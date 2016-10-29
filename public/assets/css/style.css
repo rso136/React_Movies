@@ -1,11 +1,12 @@
 body {
-	background-color: #4f4f4f;
+	background-color: #111111;
 	color: white;
 	font-family: 'Questrial', sans-serif;
 }
 
 #navBar {
 	margin-bottom: 0;
+	background-color: black;
 }
 
 #menuItem1, #menuItem2 {
@@ -40,10 +41,10 @@ body {
 }
 
 #resultBox {
-	background-color: #292a2b;
+	background-color: #222222;
 	margin-top: 20px;
 	margin-bottom: 50px;
-	border-style: groove;
+	border-style: outset;
 	border-radius: 10px;
 }
 
@@ -67,8 +68,8 @@ body {
 }
 
 .reviewBoxes {
-	background-color: #292a2b;
-	border-style: groove;
+	background-color: #222222;
+	border-style: outset;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
@@ -90,9 +91,13 @@ ol {
 }
 
 .jumbotron {
-	background-color: #292a2b;
+	background-color: #540511;
 	color: white;
 	text-align: center;
+	border-top-style: outset;
+	border-bottom-style: outset;
+	border-right-style: none;
+	border-left-style: none;
 }
 
 .night-hotel {
@@ -119,7 +124,8 @@ ol {
 
 .footer {
 	height: 85px;
-	background-color: #292a2b;
+	background-color: black;
+	border-top-style: outset;
 	bottom: 0;	
 }
 
