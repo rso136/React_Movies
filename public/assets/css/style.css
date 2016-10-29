@@ -2,6 +2,7 @@ body {
 	background-color: #111111;
 	color: white;
 	font-family: 'Questrial', sans-serif;
+	height: 100%;
 }
 
 #navBar {
@@ -50,6 +51,7 @@ body {
 
 .rateSelect {
 	padding-left: 0;
+	margin-bottom: 10px;
 }
 
 #movieForm {
@@ -122,10 +124,14 @@ ol {
   text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
 }
 
+#bottomRow {
+	margin-bottom: 0;
+}
+
 .footer {
 	height: 85px;
 	background-color: black;
-	bottom: 0;	
+	width: 100%;	
 }
 
 #reactIcon {
