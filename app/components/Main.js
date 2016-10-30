@@ -35,16 +35,7 @@ var Main = React.createClass({
 					<div className="col-md-12" id="bottomRow">
 					</div>
 				</div>
-				<footer className="footer">
 
-						<div className="col-md-2 col-md-offset-1">
-							<br></br>
-							<img src="/assets/images/react.png" height="25" width="25" id="reactIcon"></img>
-							<h5>Created with ReactJS</h5>
-
-						</div>
-
-				</footer>
 			</div>
 
 		)

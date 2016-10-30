@@ -27489,21 +27489,6 @@
 					'div',
 					{ className: 'row' },
 					React.createElement('div', { className: 'col-md-12', id: 'bottomRow' })
-				),
-				React.createElement(
-					'footer',
-					{ className: 'footer' },
-					React.createElement(
-						'div',
-						{ className: 'col-md-2 col-md-offset-1' },
-						React.createElement('br', null),
-						React.createElement('img', { src: '/assets/images/react.png', height: '25', width: '25', id: 'reactIcon' }),
-						React.createElement(
-							'h5',
-							null,
-							'Created with ReactJS'
-						)
-					)
 				)
 			);
 		}
