@@ -29,7 +29,7 @@ var Query = React.createClass({
 			<div className="main-container">
 
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3">
+					<div className="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
 						<form>
 							<div className="form-group">
 								<input type="text" value={this.state.value} className="form-control" id="search" placeholder="Search for a movie" onChange= {this.handleChange} required />

@@ -27604,7 +27604,7 @@
 					{ className: "row" },
 					React.createElement(
 						"div",
-						{ className: "col-md-6 col-md-offset-3" },
+						{ className: "col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" },
 						React.createElement(
 							"form",
 							null,
@@ -27681,7 +27681,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-3', id: 'noResult' },
+						{ className: 'col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3', id: 'noResult' },
 						React.createElement(
 							'h4',
 							null,
@@ -27720,7 +27720,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-3', id: 'resultBox' },
+						{ className: 'col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3', id: 'resultBox' },
 						React.createElement('br', null),
 						React.createElement(
 							'form',
@@ -29086,7 +29086,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-5', id: 'noReviews' },
+						{ className: 'col-xs-8 col-xs-offset-4 col-md-6 col-md-offset-5', id: 'noReviews' },
 						React.createElement(
 							'h4',
 							null,
@@ -29106,7 +29106,7 @@
 							{ className: 'row' },
 							React.createElement(
 								'div',
-								{ className: 'reviewBoxes col-md-8 col-md-offset-2' },
+								{ className: 'reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
 								React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '100', width: '75' }),
 								React.createElement(
 									'h4',
@@ -29150,7 +29150,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-8 col-md-offset-2' },
+						{ className: 'col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
 						React.createElement(
 							'h3',
 							{ id: 'reviewHeading' },

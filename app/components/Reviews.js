@@ -28,7 +28,7 @@ var Reviews = React.createClass({
 			return(
 
 				<div className="row">
-					<div className="col-md-6 col-md-offset-5" id="noReviews">
+					<div className="col-xs-8 col-xs-offset-4 col-md-6 col-md-offset-5" id="noReviews">
 						<h4>No Reviews Submitted</h4>
 					</div>
 				</div>	
@@ -43,7 +43,7 @@ var Reviews = React.createClass({
 
 					<div key={index}>
 						<div className="row">
-							<div className="reviewBoxes col-md-8 col-md-offset-2">
+							<div className="reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
 								<img className="reviewPosters" src={review.poster} height="100" width="75"></img>
 								<h4><li>{review.title}</li></h4>
 								<h5>User Review: <i>"{review.comment}"</i></h5>
@@ -59,7 +59,7 @@ var Reviews = React.createClass({
 
 			<div className="main-container">
 				<div className="row">
-					<div className="col-md-8 col-md-offset-2">
+					<div className="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
 						<h3 id="reviewHeading"><b>TOP REVIEWS</b></h3>
 						<br></br>
 					</div>

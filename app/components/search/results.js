@@ -44,7 +44,7 @@ var Results = React.createClass({
 			return (
 
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3" id="noResult">
+					<div className="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" id="noResult">
 						<h4>Search for a movie</h4>
 					</div>
 				</div>
@@ -72,7 +72,7 @@ var Results = React.createClass({
 
 			return (
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3" id="resultBox">
+					<div className="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" id="resultBox">
 					<br></br>
 					<form id="movieForm">
 					<div className="form-group">
