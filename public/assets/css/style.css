@@ -8,6 +8,7 @@ body {
 	font-family: 'Questrial', sans-serif;
 	min-height: 100%;
 	position: relative;
+	padding-bottom: 100px;
 }
 
 #navBar {
