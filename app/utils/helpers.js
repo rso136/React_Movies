@@ -15,9 +15,9 @@ var helpers = {
 			})
 	},
 
-	postReview: function(title, rating, comment, poster) {
+	postReview: function(title, rating, comment, poster, tomatoRev, tomatoRating, tomatoURL) {
 
-		var newReview = {title: title, rating: rating, comment: comment, poster: poster};
+		var newReview = {title: title, rating: rating, comment: comment, poster: poster, tomatoRev: tomatoRev, tomatoRating: tomatoRating, tomatoURL: tomatoURL};
 		return axios.post('/api/saved', newReview)
 			.then(function(results){
 				console.log(results);

@@ -17,6 +17,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(express.static('./public'));
 
 mongoose.connect('mongodb://heroku_0nr1bsj4:4eegk8mdbgaajo6jg67bsq4bla@ds137197.mlab.com:37197/heroku_0nr1bsj4');
+//mongoose.connect('mongodb://localhost/movies');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
@@ -33,7 +34,7 @@ app.get('/', function(req, res){
 
 app.post('/api/saved', function(req, res){
 
-	Review.create({"title": req.body.title, "date": Date.now(), "rating": req.body.rating, "comment": req.body.comment, "poster": req.body.poster}, function(err, review) {
+	Review.create({"title": req.body.title, "date": Date.now(), "rating": req.body.rating, "comment": req.body.comment, "poster": req.body.poster, "tomatoRev": req.body.tomatoRev, "tomatoRating": req.body.tomatoRating, "tomatoURL": req.body.tomatoURL}, function(err, review) {
 		if(err){
 			console.log(err);
 		}

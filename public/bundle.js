@@ -27666,8 +27666,11 @@
 			var userComment = this.state.comment;
 			var title = this.props.results.Title;
 			var poster = this.props.results.Poster;
+			var tomatoRev = this.props.results.tomatoConsensus;
+			var tomatoRating = this.props.results.tomatoRating;
+			var tomatoURL = this.props.results.tomatoURL;
 
-			helpers.postReview(title, userRating, userComment, poster).then(function (data) {
+			helpers.postReview(title, userRating, userComment, poster, tomatoRev, tomatoRating, tomatoURL).then(function (data) {
 				console.log(data);
 			}.bind(this));
 		},
@@ -27862,9 +27865,9 @@
 			});
 		},
 
-		postReview: function postReview(title, rating, comment, poster) {
+		postReview: function postReview(title, rating, comment, poster, tomatoRev, tomatoRating, tomatoURL) {
 
-			var newReview = { title: title, rating: rating, comment: comment, poster: poster };
+			var newReview = { title: title, rating: rating, comment: comment, poster: poster, tomatoRev: tomatoRev, tomatoRating: tomatoRating, tomatoURL: tomatoURL };
 			return axios.post('/api/saved', newReview).then(function (results) {
 				console.log(results);
 			});
@@ -29107,34 +29110,61 @@
 							React.createElement(
 								'div',
 								{ className: 'reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
-								React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '100', width: '75' }),
 								React.createElement(
-									'h4',
-									null,
-									React.createElement(
-										'li',
-										null,
-										review.title
-									)
+									'a',
+									{ href: review.tomatoURL, target: '_blank' },
+									React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '180', width: '140' })
 								),
 								React.createElement(
-									'h5',
-									null,
-									'User Review: ',
+									'div',
+									{ className: 'reviewColumn col-xs-8 col-md-9' },
 									React.createElement(
-										'i',
+										'h4',
 										null,
-										'"',
-										review.comment,
-										'"'
+										React.createElement(
+											'li',
+											null,
+											review.title
+										)
+									),
+									React.createElement(
+										'h5',
+										null,
+										'User Review: ',
+										React.createElement(
+											'i',
+											null,
+											'"',
+											review.comment,
+											'"'
+										)
+									),
+									React.createElement(
+										'h5',
+										null,
+										'User Rating: ',
+										review.rating,
+										' stars'
+									),
+									React.createElement(
+										'h5',
+										null,
+										'Tomato Consensus: ',
+										React.createElement(
+											'i',
+											null,
+											'"',
+											review.tomatoRev,
+											'"'
+										)
+									),
+									React.createElement(
+										'h5',
+										null,
+										'Tomato Rating: ',
+										review.tomatoRating,
+										' out of 10'
 									)
-								),
-								React.createElement(
-									'h5',
-									null,
-									'Rating: ',
-									review.rating,
-									' stars'
 								)
 							)
 						)

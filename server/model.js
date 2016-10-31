@@ -16,6 +16,15 @@ var ReviewSchema = new Schema({
   },
   poster: {
   	type: String
+  },
+  tomatoRev: {
+    type: String
+  },
+  tomatoRating: {
+    type: String
+  },
+  tomatoURL: {
+    type: String
   }
 });
 

@@ -30,8 +30,11 @@ var Results = React.createClass({
 		var userComment = this.state.comment;
 		var title = this.props.results.Title;
 		var poster = this.props.results.Poster;
+		var tomatoRev = this.props.results.tomatoConsensus;
+		var tomatoRating = this.props.results.tomatoRating;
+		var tomatoURL = this.props.results.tomatoURL;
 
-		helpers.postReview(title, userRating, userComment, poster)
+		helpers.postReview(title, userRating, userComment, poster, tomatoRev, tomatoRating, tomatoURL)
 			.then(function(data){
 				console.log(data);
 			}.bind(this))

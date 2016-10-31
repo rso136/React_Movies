@@ -43,11 +43,15 @@ var Reviews = React.createClass({
 
 					<div key={index}>
 						<div className="row">
-							<div className="reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-								<img className="reviewPosters" src={review.poster} height="100" width="75"></img>
+							<div className="reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">			
+								<a href={review.tomatoURL} target="_blank"><img className="reviewPosters" src={review.poster} height="180" width="140"></img></a>
+								<div className="reviewColumn col-xs-8 col-md-9">
 								<h4><li>{review.title}</li></h4>
 								<h5>User Review: <i>"{review.comment}"</i></h5>
-								<h5>Rating: {review.rating} stars</h5>
+								<h5>User Rating: {review.rating} stars</h5>
+								<h5>Tomato Consensus: <i>"{review.tomatoRev}"</i></h5>
+								<h5>Tomato Rating: {review.tomatoRating} out of 10</h5>
+								</div>
 							</div>
 						</div>
 					</div>
