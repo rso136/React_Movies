@@ -31,6 +31,19 @@ var helpers = {
 				console.log('axios results', results);
 				return results;
 			})
+	},
+
+	deleteReview: function(id){
+
+		return axios.delete('/api/saved', {
+			params: {
+				'id': id
+			}
+		})
+		.then(function(results){
+			console.log('axios delete results', results);
+			return results;
+		})
 	}
 }
 

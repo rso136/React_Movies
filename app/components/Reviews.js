@@ -22,6 +22,23 @@ var Reviews = React.createClass({
 			}.bind(this))
 	},
 
+	handleClick: function(item, event){
+
+		helpers.deleteReview(item._id)
+			.then(function(data){
+
+			helpers.getReviews()
+				.then(function(reviewData){
+					this.setState({
+						reviews: reviewData.data
+					});
+					console.log("saved reviews", reviewData.data);
+				}.bind(this))
+			
+			}.bind(this))		
+
+	},
+
 	render: function() {
 
 		if (this.state.reviews == "") {
@@ -43,14 +60,19 @@ var Reviews = React.createClass({
 
 					<div key={index}>
 						<div className="row">
-							<div className="reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">			
-								<a href={review.tomatoURL} target="_blank"><img className="reviewPosters" src={review.poster} height="180" width="140"></img></a>
+							<div className="reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+								<div className="col-xs-4 col-md-3">			
+									<a href={review.tomatoURL} target="_blank"><img className="reviewPosters" src={review.poster} height="180" width="140"></img></a>
+								<button className="btn btn-customC" type="button" onClick={this.handleClick.bind(this, review)}>Remove Review</button>
+								</div>	
 								<div className="reviewColumn col-xs-8 col-md-9">
-								<h4><b><li>{review.title}</li></b></h4>
-								<h5><b>User Review:</b> <i>"{review.comment}"</i></h5>
-								<h5><b>User Rating:</b> {review.rating} stars</h5>
-								<h5><b>Tomato Consensus:</b> <i>"{review.tomatoRev}"</i></h5>
-								<h5><b>Tomato Rating:</b> {review.tomatoRating} out of 10</h5>
+									<h4><b><li>{review.title}</li></b></h4>
+									<h5><b>User Review:</b> <i>"{review.comment}"</i></h5>
+									<h5><b>User Rating:</b> {review.rating} stars</h5>
+									<h5><b>Tomato Consensus:</b> <i>"{review.tomatoRev}"</i></h5>
+									<h5><b>Tomato Rating:</b> {review.tomatoRating} out of 10</h5>
+									<input type="hidden" value={review._id} />
+									
 								</div>
 							</div>
 						</div>

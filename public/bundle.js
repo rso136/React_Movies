@@ -27879,6 +27879,18 @@
 				console.log('axios results', results);
 				return results;
 			});
+		},
+
+		deleteReview: function deleteReview(id) {
+
+			return axios.delete('/api/saved', {
+				params: {
+					'id': id
+				}
+			}).then(function (results) {
+				console.log('axios delete results', results);
+				return results;
+			});
 		}
 	};
 
@@ -29081,6 +29093,19 @@
 			}.bind(this));
 		},
 
+		handleClick: function handleClick(item, event) {
+
+			helpers.deleteReview(item._id).then(function (data) {
+
+				helpers.getReviews().then(function (reviewData) {
+					this.setState({
+						reviews: reviewData.data
+					});
+					console.log("saved reviews", reviewData.data);
+				}.bind(this));
+			}.bind(this));
+		},
+
 		render: function render() {
 
 			if (this.state.reviews == "") {
@@ -29111,9 +29136,18 @@
 								'div',
 								{ className: 'reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
 								React.createElement(
-									'a',
-									{ href: review.tomatoURL, target: '_blank' },
-									React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '180', width: '140' })
+									'div',
+									{ className: 'col-xs-4 col-md-3' },
+									React.createElement(
+										'a',
+										{ href: review.tomatoURL, target: '_blank' },
+										React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '180', width: '140' })
+									),
+									React.createElement(
+										'button',
+										{ className: 'btn btn-customC', type: 'button', onClick: this.handleClick.bind(this, review) },
+										'Remove Review'
+									)
 								),
 								React.createElement(
 									'div',
@@ -29188,7 +29222,8 @@
 										' ',
 										review.tomatoRating,
 										' out of 10'
-									)
+									),
+									React.createElement('input', { type: 'hidden', value: review._id })
 								)
 							)
 						)

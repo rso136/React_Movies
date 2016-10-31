@@ -58,6 +58,22 @@ app.get('/api/saved', function(req, res) {
 		})
 });
 
+app.delete('/api/saved', function(req, res){
+
+	var id = req.param("id");
+
+	Review.find({"_id": id}).remove().exec(function(err, data){
+		if(err){
+			console.log(err);
+		}
+		else {
+			res.send("Deleted");
+		}
+	})
+
+
+})
+
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
 });
