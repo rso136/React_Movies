@@ -29122,15 +29122,24 @@
 										'h4',
 										null,
 										React.createElement(
-											'li',
+											'b',
 											null,
-											review.title
+											React.createElement(
+												'li',
+												null,
+												review.title
+											)
 										)
 									),
 									React.createElement(
 										'h5',
 										null,
-										'User Review: ',
+										React.createElement(
+											'b',
+											null,
+											'User Review:'
+										),
+										' ',
 										React.createElement(
 											'i',
 											null,
@@ -29142,14 +29151,24 @@
 									React.createElement(
 										'h5',
 										null,
-										'User Rating: ',
+										React.createElement(
+											'b',
+											null,
+											'User Rating:'
+										),
+										' ',
 										review.rating,
 										' stars'
 									),
 									React.createElement(
 										'h5',
 										null,
-										'Tomato Consensus: ',
+										React.createElement(
+											'b',
+											null,
+											'Tomato Consensus:'
+										),
+										' ',
 										React.createElement(
 											'i',
 											null,
@@ -29161,7 +29180,12 @@
 									React.createElement(
 										'h5',
 										null,
-										'Tomato Rating: ',
+										React.createElement(
+											'b',
+											null,
+											'Tomato Rating:'
+										),
+										' ',
 										review.tomatoRating,
 										' out of 10'
 									)
