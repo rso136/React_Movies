@@ -27615,7 +27615,7 @@
 							),
 							React.createElement(
 								"button",
-								{ type: "button", className: "btn btn-custom", onClick: this.handleSubmit },
+								{ type: "submit", className: "btn btn-custom", onClick: this.handleSubmit },
 								"FIND"
 							)
 						)
