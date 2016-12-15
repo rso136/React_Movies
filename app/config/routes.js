@@ -9,10 +9,6 @@ var Main = require('../components/Main');
 var Search = require('../components/Search'); 
 var Reviews = require('../components/Reviews');
 
-
-
-
-
 module.exports = (
 
 		<Route path='/' component={Main}>

@@ -34,7 +34,7 @@ var Query = React.createClass({
 							<div className="form-group">
 								<input type="text" value={this.state.value} className="form-control" id="search" placeholder="Search for a movie" onChange= {this.handleChange} required />
 							</div>
-							<button type="submit" className="btn btn-custom" onClick={this.handleSubmit}>FIND</button>
+							<button type="button" className="btn btn-custom" onClick={this.handleSubmit}>FIND</button>
 						</form>	
 					</div>
 				</div>
