@@ -27611,11 +27611,11 @@
 							React.createElement(
 								"div",
 								{ className: "form-group" },
-								React.createElement("input", { type: "text", value: this.state.value, className: "form-control", id: "search", placeholder: "Search for a movie", onChange: this.handleChange, required: true })
+								React.createElement("input", { type: "text", value: this.state.value, className: "form-control", id: "search", placeholder: "Search for a movie", onChange: this.handleChange })
 							),
 							React.createElement(
 								"button",
-								{ type: "button", className: "btn btn-custom", onClick: this.handleSubmit },
+								{ type: "button", id: "searchBtn", className: "btn btn-custom", onClick: this.handleSubmit },
 								"FIND"
 							)
 						)
