@@ -2,7 +2,7 @@
 
 Description: Movie-Me is a node application intended to demonstrate ReactJS / React Router and MongoDB proficiency. 
 
-The primary technologies utilized in this application is as follows:
+The primary technologies utilized in this application are as follows:
 
 - Node.js
 - Express.js 
