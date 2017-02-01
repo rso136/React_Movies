@@ -27700,7 +27700,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-md-6 col-md-offset-3', id: 'error' },
+						{ className: 'col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3', id: 'error' },
 						React.createElement(
 							'h4',
 							null,
@@ -27723,7 +27723,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3', id: 'resultBox' },
+						{ className: 'col-xs-12 col-md-6 col-md-offset-3', id: 'resultBox' },
 						React.createElement('br', null),
 						React.createElement(
 							'form',
@@ -27792,7 +27792,7 @@
 								),
 								React.createElement(
 									'div',
-									{ className: 'rateSelect col-xs-3' },
+									{ className: 'rateSelect col-xs-6' },
 									React.createElement(
 										'label',
 										null,
@@ -29114,7 +29114,7 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-xs-8 col-xs-offset-4 col-md-6 col-md-offset-5', id: 'noReviews' },
+						{ className: 'col-xs-12 col-md-6 col-md-offset-5', id: 'noReviews' },
 						React.createElement(
 							'h4',
 							null,
@@ -29134,14 +29134,14 @@
 							{ className: 'row' },
 							React.createElement(
 								'div',
-								{ className: 'reviewBoxes col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
+								{ className: 'reviewBoxes col-xs-12 col-xs-offset-0 col-md-8 col-md-offset-2' },
 								React.createElement(
 									'div',
-									{ className: 'col-xs-4 col-md-3' },
+									{ className: 'col-xs-12 col-md-3 reviewPosterButton' },
 									React.createElement(
 										'a',
 										{ href: review.tomatoURL, target: '_blank' },
-										React.createElement('img', { className: 'reviewPosters', src: review.poster, height: '180', width: '140' })
+										React.createElement('img', { className: 'reviewPosters img-fluid', src: review.poster, height: '180', width: '140' })
 									),
 									React.createElement(
 										'button',
@@ -29151,18 +29151,14 @@
 								),
 								React.createElement(
 									'div',
-									{ className: 'reviewColumn col-xs-8 col-md-9' },
+									{ className: 'reviewColumn col-xs-12 col-md-9' },
 									React.createElement(
 										'h4',
 										null,
 										React.createElement(
 											'b',
 											null,
-											React.createElement(
-												'li',
-												null,
-												review.title
-											)
+											review.title
 										)
 									),
 									React.createElement(
@@ -29239,10 +29235,10 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2' },
+						{ className: 'col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2', id: 'reviewHeading' },
 						React.createElement(
 							'h3',
-							{ id: 'reviewHeading' },
+							null,
 							React.createElement(
 								'b',
 								null,
@@ -29255,11 +29251,7 @@
 				React.createElement(
 					'div',
 					{ id: 'listContainer' },
-					React.createElement(
-						'ol',
-						null,
-						reviews
-					)
+					reviews
 				)
 			);
 		}

@@ -1,7 +1,7 @@
 {
   "name": "moviepro",
   "version": "1.0.0",
-  "description": "",
+  "description": "Description: Movie-Me is a node application intended to demonstrate ReactJS / React Router and MongoDB proficiency.",
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {},
@@ -10,5 +10,13 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rso136/React_Movies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rso136/React_Movies/issues"
+  },
+  "homepage": "https://github.com/rso136/React_Movies#readme"
 }

@@ -57,7 +57,7 @@ var Results = React.createClass({
 				
 			return (
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3" id="error">
+					<div className="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" id="error">
 						<h4>No movie found by that title</h4>
 					</div>
 				</div>
@@ -75,7 +75,7 @@ var Results = React.createClass({
 
 			return (
 				<div className="row">
-					<div className="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" id="resultBox">
+					<div className="col-xs-12 col-md-6 col-md-offset-3" id="resultBox">
 					<br></br>
 					<form id="movieForm">
 					<div className="form-group">
@@ -86,7 +86,7 @@ var Results = React.createClass({
 						<h5><b>Actors:</b> {movieActors}</h5>
 						<h5><b>Rated:</b> {movieRated}</h5>
 						<h5><b>Release Year:</b> {movieYear}</h5>
-						<div className="rateSelect col-xs-3">
+						<div className="rateSelect col-xs-6">
 							<label>Your Rating:</label>
 							<select className="form-control" id="rating" onChange={this.handleChange}>
 								<option value="1">1 star</option>
