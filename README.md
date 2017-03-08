@@ -8,5 +8,6 @@ The primary technologies utilized in this application are as follows:
 - Express.js 
 - ReactJS
 - React Router
+- Webpack
 - MongoDB 
 - User Interface: Bootstrap v3.3.7  
